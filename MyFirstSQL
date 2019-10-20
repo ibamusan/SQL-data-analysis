@@ -1,0 +1,35 @@
+-- SELECT 
+-- 	*
+-- FROM customer;
+
+-- SELECT
+-- 	first_name "Customer Name",
+-- 	last_name
+-- FROM customer;
+
+-- SELECT
+-- 	first_name as "Customer Name",
+-- 	last_name
+-- FROM customer;
+-- This is a complete synthax for the above
+
+--  SELECT
+-- first_name "Customer Name",
+--  	last_name,
+--  	email "EMAIL"
+-- FROM customer
+-- LIMIT 2;
+
+SELECT
+	customer_id,
+	first_name "Customer Name",
+	last_name,
+	email "EMAIL"
+FROM customer
+LIMIT 10 OFFSET 50;
+
+SELECT
+	*
+FROM payment
+ORDER BY payment_id ASC
+LIMIT 20 OFFSET 50
