@@ -1,0 +1,26 @@
+SELECT 
+	Customer_id,
+	sum(amount)
+FROM payment
+GROUP BY customer_id
+ORDER BY sum DESC;
+
+
+SELECT 
+	Staff_id,
+	count(payment_id)
+FROM payment
+WHERE staff_id = 2
+GROUP BY staff_id;
+
+
+ SELECT 
+ 	staff_id,
+	count(amount)
+  FROM payment
+  GROUP BY staff_id;
+  
+  SELECT 
+	*	
+  FROM customer
+  WHERE first_name ILIKE 'a%' or last_name Ilike 'e%';
